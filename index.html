@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/syle.css">
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+        <div id="container">
+            <div id="header">
+                <h1>Jogo da Forca</h1>
+                <h2>Digite a palavra secreta: </h2>
+                <input class="input" type="text" name="text" id="inpText" autocomplete="off">
+               <button class="btn" id="btnDefinir" >Definar Palavra</button>
+                
+            </div>
+        
+            <div id="adivinhar">
+                <h2>Digite uma letra: </h2>
+                <div id="mostraPalavra"></div>
+                <input class="input" type="text" name="text" id="inpLetra" autocomplete="off">
+                <div id="tentativas"></div>
+                <button class="btn" id="btnAdivinhar">Adivinhar Palavra</button>
+                <button class="btn" id="btnRenicar">Renicar Jogo</button>
+            </div>
+
+
+        
+        </div>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
